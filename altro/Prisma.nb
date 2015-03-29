@@ -1,0 +1,480 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     14698,        471]
+NotebookOptionsPosition[     13816,        436]
+NotebookOutlinePosition[     14153,        451]
+CellTagsIndexPosition[     14110,        448]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["PRISMA: postazione 2", "Chapter",
+ CellChangeTimes->{{3.635588079433854*^9, 3.6355880795918007`*^9}, {
+  3.6355883272817583`*^9, 3.6355883686287413`*^9}, {3.635588456897596*^9, 
+  3.635588468936392*^9}, {3.635590853484413*^9, 3.6355908569365892`*^9}},
+ FormatType->"TextForm"],
+
+Cell[CellGroupData[{
+
+Cell["Calibrazione", "Subchapter",
+ CellChangeTimes->{{3.635588471436955*^9, 3.635588501081052*^9}}],
+
+Cell["\<\
+Messa a fuoco.
+Altezza tale che solo una parte del fascio passi nel prisma.
+Ricerca del multipletto di righe.\
+\>", "Text",
+ CellChangeTimes->{{3.635588507633387*^9, 3.635588551207324*^9}, {
+  3.63558864654914*^9, 3.635588649057188*^9}, {3.635588682748768*^9, 
+  3.635588704013858*^9}, {3.635588800998138*^9, 3.635588814170588*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Calcolo dell' indice di rifrazione", "Subchapter",
+ CellChangeTimes->{{3.6355888194078293`*^9, 3.635588837846807*^9}}],
+
+Cell[TextData[{
+ "Angolo di minima deviazione: si cercano le righe e si ruota il prisma, \
+finch\[EAcute] il loro movimento inverte il proprio verso. Per aumentare la \
+precisione, si registrano il massimo e minimo angolo per cui il movimento \
+appare nullo, facendone poi la media.  \n",
+ Cell[BoxData[
+  RowBox[{
+   RowBox[{
+    SubscriptBox["\[Theta]min", "min1"], "=", 
+    RowBox[{"338", "\[Degree]"}]}], ";", 
+   RowBox[{
+    SubscriptBox["\[Theta]min", "min"], "=", 
+    RowBox[{"157", 
+     RowBox[{"\[Degree]54", "'"}]}]}], ";", 
+   RowBox[{
+    SubscriptBox["\[Theta]min", "max1"], "=", 
+    RowBox[{"337", 
+     RowBox[{"\[Degree]30", "'"}]}]}], ";", 
+   RowBox[{
+    SubscriptBox["\[Theta]min", "max2"], "=", 
+    RowBox[{"157", 
+     RowBox[{"\[Degree]22", "'"}]}]}], ";"}]], "Input"],
+ "\n",
+ Cell[BoxData[
+  RowBox[{"\[Theta]min", "=", 
+   RowBox[{"337", 
+    RowBox[{"\[Degree]15", "'"}]}]}]], "Input"],
+ "\n",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Theta]", 
+    RowBox[{"0", ",", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "=288\[Degree]14\[CloseCurlyQuote]; ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Theta]", 
+    RowBox[{"0", ",", "2"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "108\[Degree]18\[CloseCurlyQuote]\n\n",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Theta]", 
+    RowBox[{"viola", ",", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "=338\[Degree]32\[CloseCurlyQuote]; ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Theta]", 
+      RowBox[{"viola", ",", "2"}]], "=", 
+     RowBox[{"158", 
+      RowBox[{"\[Degree]28", "'"}]}]}], ";"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "\n",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Theta]", 
+    RowBox[{"blu", ",", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "=338\[Degree]; ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Theta]", 
+      RowBox[{"blu", ",", "2"}]], "=", 
+     RowBox[{"157", 
+      RowBox[{"\[Degree]52", "'"}]}]}], ";"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "\n",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Theta]", 
+    RowBox[{"azzurro", ",", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "=337\[Degree]46\[CloseCurlyQuote]; ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Theta]", 
+      RowBox[{"azzurro", ",", "2"}]], "=", 
+     RowBox[{"157", 
+      RowBox[{"\[Degree]40", "'"}]}]}], ";"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "\n",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Theta]", 
+    RowBox[{"verde", ",", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "=337\[Degree]22\[CloseCurlyQuote]; ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Theta]", 
+      RowBox[{"verde", ",", "2"}]], "=", 
+     RowBox[{"157", 
+      RowBox[{"\[Degree]14", "'"}]}]}], ";"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "\n",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Theta]", 
+    RowBox[{"rosso", ",", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "=336\[Degree]08\[CloseCurlyQuote]; ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Theta]", 
+      RowBox[{"rosso", ",", "2"}]], "=", 
+     RowBox[{"156", 
+      RowBox[{"\[Degree]04", "'"}]}]}], ";"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "\n\n",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[CapitalDelta]\[Theta]", 
+    RowBox[{"viola", ",", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "=50\[Degree]18\[CloseCurlyQuote];",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{" ", 
+    SubscriptBox["\[CapitalDelta]\[Theta]", 
+     RowBox[{"viola", ",", "2"}]]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "=50\[Degree]10\[CloseCurlyQuote];\n",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[CapitalDelta]\[Theta]", 
+    RowBox[{"blu", ",", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "=49\[Degree]46\[CloseCurlyQuote];",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{" ", 
+    SubscriptBox["\[CapitalDelta]\[Theta]", 
+     RowBox[{"blu", ",", "2"}]]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "=49\[Degree]34\[CloseCurlyQuote];\n",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[CapitalDelta]\[Theta]", 
+    RowBox[{"azzurro", ",", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "=49\[Degree]14\[CloseCurlyQuote];",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{" ", 
+    SubscriptBox["\[CapitalDelta]\[Theta]", 
+     RowBox[{"azzurro", ",", "2"}]]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "=49\[Degree]22\[CloseCurlyQuote];\n",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[CapitalDelta]\[Theta]", 
+    RowBox[{"verde", ",", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "=48\[Degree]50\[CloseCurlyQuote];",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{" ", 
+    SubscriptBox["\[CapitalDelta]\[Theta]", 
+     RowBox[{"verde", ",", "2"}]]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "=48\[Degree]56\[CloseCurlyQuote];\n",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[CapitalDelta]\[Theta]", 
+    RowBox[{"rosso", ",", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "=47\[Degree]54\[CloseCurlyQuote];",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{" ", 
+    SubscriptBox["\[CapitalDelta]\[Theta]", 
+     RowBox[{"rosso", ",", "2"}]]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "=47\[Degree]46\[CloseCurlyQuote];\n\n\n\n\
+n=sin(30+\[CapitalDelta]\[Theta]/2)/sin(30)\n"
+}], "Text",
+ CellChangeTimes->{{3.635588841608234*^9, 3.635588856735797*^9}, {
+   3.635589575233121*^9, 3.63558962166311*^9}, {3.6355897210048523`*^9, 
+   3.635589767513039*^9}, {3.635590277919779*^9, 3.63559029596033*^9}, {
+   3.63559035849168*^9, 3.635590383153427*^9}, {3.635590413828952*^9, 
+   3.635590441690173*^9}, {3.6355905372467127`*^9, 3.635590621829764*^9}, {
+   3.6355906548714046`*^9, 3.635590838820724*^9}, {3.6355908849055147`*^9, 
+   3.635590889877116*^9}, {3.635590927197639*^9, 3.635590930325617*^9}, {
+   3.635591013974276*^9, 3.635591041850541*^9}, {3.6355911181751537`*^9, 
+   3.6355911205411386`*^9}, {3.635591161857491*^9, 3.63559116859412*^9}, {
+   3.6355912163125362`*^9, 3.6355912304625387`*^9}, {3.635591264506524*^9, 
+   3.635591309142159*^9}, {3.6355914437977552`*^9, 3.6355915970345583`*^9}, {
+   3.635591636796908*^9, 3.635591843754424*^9}, 3.63559277127343*^9, {
+   3.635592806403595*^9, 3.635592810034268*^9}, {3.635592885034233*^9, 
+   3.6355929239982758`*^9}, 3.635592962626513*^9, {3.635593010558123*^9, 
+   3.635593048015592*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Array", "[", 
+   RowBox[{"dt", ",", "5"}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Array", "[", 
+    RowBox[{"n", ",", "5"}], "]"}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"n", "[", "dt_", "]"}], ":=", 
+   RowBox[{
+    RowBox[{"Sin", "[", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"30", "+", 
+        RowBox[{"dt", "/", "2"}]}], ")"}], "Degree"}], "]"}], "/", 
+    RowBox[{"Sin", "[", 
+     RowBox[{"30", "Degree"}], "]"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox["\[CapitalDelta]\[Theta]", "viola1"], "=", "50.3"}], ";", 
+  RowBox[{
+   SubscriptBox["\[CapitalDelta]\[Theta]", "viola2"], "=", "50.1"}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"dt", "[", "1", "]"}], "=", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      SubscriptBox["\[CapitalDelta]\[Theta]", "viola1"], "+", 
+      SubscriptBox["\[CapitalDelta]\[Theta]", "viola1"]}], ")"}], "/", 
+    "2"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"n", "[", "1", "]"}], "=", 
+   RowBox[{"n", "[", 
+    RowBox[{"dt", "[", "1", "]"}], "]"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox["\[CapitalDelta]\[Theta]", "blu1"], "=", "49.77"}], ";", 
+  RowBox[{
+   SubscriptBox["\[CapitalDelta]\[Theta]", "blu2"], "=", "49.57"}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"dt", "[", "2", "]"}], "=", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      SubscriptBox["\[CapitalDelta]\[Theta]", "blu1"], "+", 
+      SubscriptBox["\[CapitalDelta]\[Theta]", "blu2"]}], ")"}], "/", "2"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"n", "[", "2", "]"}], "=", 
+   RowBox[{"n", "[", 
+    RowBox[{"dt", "[", "2", "]"}], "]"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox["\[CapitalDelta]\[Theta]", "azzurro1"], "=", "49.23"}], ";", 
+  RowBox[{
+   SubscriptBox["\[CapitalDelta]\[Theta]", "azzurro2"], "=", "49.37"}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"dt", "[", "3", "]"}], "=", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      SubscriptBox["\[CapitalDelta]\[Theta]", "azzurro1"], "+", 
+      SubscriptBox["\[CapitalDelta]\[Theta]", "azzurro2"]}], ")"}], "/", 
+    "2"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"n", "[", "3", "]"}], "=", 
+   RowBox[{"n", "[", 
+    RowBox[{"dt", "[", "3", "]"}], "]"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox["\[CapitalDelta]\[Theta]", "verde1"], "=", "48.83"}], ";", 
+  RowBox[{
+   SubscriptBox["\[CapitalDelta]\[Theta]", "verde2"], "=", "48.93"}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"dt", "[", "4", "]"}], "=", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      SubscriptBox["\[CapitalDelta]\[Theta]", "verde1"], "+", 
+      SubscriptBox["\[CapitalDelta]\[Theta]", "verde2"]}], ")"}], "/", 
+    "2"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"n", "[", "4", "]"}], "=", 
+   RowBox[{"n", "[", 
+    RowBox[{"dt", "[", "4", "]"}], "]"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox["\[CapitalDelta]\[Theta]", "rosso1"], "=", "47.9"}], ";", 
+  RowBox[{
+   SubscriptBox["\[CapitalDelta]\[Theta]", "rosso2"], "=", "47.77"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"dt", "[", "5", "]"}], "=", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      SubscriptBox["\[CapitalDelta]\[Theta]", "rosso1"], "+", 
+      SubscriptBox["\[CapitalDelta]\[Theta]", "rosso2"]}], ")"}], "/", 
+    "2"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"n", "[", "5", "]"}], "=", 
+  RowBox[{"n", "[", 
+   RowBox[{"dt", "[", "5", "]"}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.635593068180867*^9, 3.6355933333349133`*^9}, {
+  3.6355933708055763`*^9, 3.635593519355526*^9}, {3.635593550441539*^9, 
+  3.635593797682221*^9}}],
+
+Cell[BoxData["1.6413017099688014`"], "Output",
+ CellChangeTimes->{{3.6355937823166323`*^9, 3.635593798428891*^9}}],
+
+Cell[BoxData["1.6349937366319127`"], "Output",
+ CellChangeTimes->{{3.6355937823166323`*^9, 3.635593798430634*^9}}],
+
+Cell[BoxData["1.6312660069487275`"], "Output",
+ CellChangeTimes->{{3.6355937823166323`*^9, 3.6355937984334106`*^9}}],
+
+Cell[BoxData["1.627013922731056`"], "Output",
+ CellChangeTimes->{{3.6355937823166323`*^9, 3.63559379843566*^9}}],
+
+Cell[BoxData["1.6163396119870088`"], "Output",
+ CellChangeTimes->{{3.6355937823166323`*^9, 3.635593798437546*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Calcolo dell\[CloseCurlyQuote]angolo di apertura del prisma", \
+"Subchapter",
+ CellChangeTimes->{{3.635591929624236*^9, 3.6355919486613503`*^9}}],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Phi]", "1"], "=", 
+     RowBox[{"17", 
+      RowBox[{"\[Degree]32", "'"}]}]}], ";", 
+    RowBox[{
+     SubscriptBox["\[Phi]", "2"], "=", 
+     RowBox[{"197", 
+      RowBox[{"\[Degree]22", "'"}]}]}], ";"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Psi]", "2"], "=", 
+     RowBox[{"77", 
+      RowBox[{"\[Degree]32", "'"}]}]}], ";", 
+    RowBox[{
+     SubscriptBox["\[Psi]", "2"], "=", 
+     RowBox[{"257", 
+      RowBox[{"\[Degree]22", "'"}]}]}], ";"}], TraditionalForm]],
+  FormatType->"TraditionalForm"]
+}], "Text",
+ CellChangeTimes->{{3.635591951676066*^9, 3.6355919585171556`*^9}, {
+  3.635592469694098*^9, 3.635592587849321*^9}, {3.6355926198812037`*^9, 
+  3.635592648979945*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1366, 744},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"10.0 for Linux x86 (64-bit) (September 9, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 282, 4, 66, "Chapter"],
+Cell[CellGroupData[{
+Cell[887, 30, 100, 1, 65, "Subchapter"],
+Cell[990, 33, 342, 7, 77, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1369, 45, 124, 1, 65, "Subchapter"],
+Cell[1496, 48, 6621, 201, 507, "Text"],
+Cell[CellGroupData[{
+Cell[8142, 253, 3995, 125, 517, "Input"],
+Cell[12140, 380, 114, 1, 32, "Output"],
+Cell[12257, 383, 114, 1, 32, "Output"],
+Cell[12374, 386, 116, 1, 32, "Output"],
+Cell[12493, 389, 112, 1, 32, "Output"],
+Cell[12608, 392, 114, 1, 65, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12771, 399, 151, 2, 65, "Subchapter"],
+Cell[12925, 403, 863, 29, 52, "Text"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
